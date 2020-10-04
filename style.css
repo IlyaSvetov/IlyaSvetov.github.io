@@ -1,0 +1,27 @@
+.container{
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 500px;
+	height: 500px;
+}
+
+.cell{
+    box-sizing: border-box;
+	background-color: #a8e6cf;
+	border: 1px black solid;
+	width: 100px;
+	height: 100px;
+}
+
+.cell:hover{
+	background-color: #ff8b94;
+	transition: 0.5s;
+}
+
+.row{
+	display: flex;
+}
+
+.changed{
+	background-color: #feb2a8;
+}
