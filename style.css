@@ -1,11 +1,10 @@
-.container{
+.container {
 	margin: 0 auto;
 	margin-top: 100px;
 	width: 500px;
-	height: 500px;
 }
 
-.cell{
+.cell {
         box-sizing: border-box;
 	background-color: #a8e6cf;
 	border: 1px black solid;
@@ -13,17 +12,27 @@
 	height: 100px;
 }
 
-.row{
+.row {
 	display: flex;
 }
 
-.changed{
+.changed {
 	background-color: #feb2a8;
 }
 
-@media(min-width:1020px){
+@media(min-width:1000px) {
 	.cell:hover{
-	background-color: #F0E68C;
-	transition: 0.5s;
+		background-color: #F0E68C;
+		transition: 0.5s;
    }
+}
+
+@media(max-width: 999px) {
+	.container{
+		width: 250px;
+	}
+	.cell{
+		width: 50px;
+		height: 50px;
+	}
 }
