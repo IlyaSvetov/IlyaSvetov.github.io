@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	
 	function refreshCount() {
 		
-		value = -1;
+		count = -1;
 	}
 
 
