@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
 
 	const cells = document.querySelectorAll('.cell');
+	let count = 0;
 
 	function toogleClasses(item){
 
@@ -16,6 +17,8 @@ window.addEventListener('DOMContentLoaded', () => {
 		if (cellBlockLeft!=null)  cellBlockLeft.classList.toggle('changed');
 		if (cellBlockTop!=null)  cellBlockTop.classList.toggle('changed');
 		if (cellBlockBottom!=null)  cellBlockBottom.classList.toggle('changed');
+		
+		count++;
 
 	}
 
@@ -28,18 +31,22 @@ window.addEventListener('DOMContentLoaded', () => {
 			}
 		}
 
-		alert("Great, job!!!")
+		alert(`Completed for ${count} clicks`);
+		refreshCount();
 	}
-
+	
+	function refreshCount() {
+		
+		value=-1;
+	}
 
 
     cells.forEach(item => {
 
     	item.addEventListener('click', () => {
 
-    		const cell = item.id;
-    		toogleClasses(cell);
-    		checkWin();
+    		toogleClasses((item.id));
+    		checkWin(count);
     	})
     });
 })
