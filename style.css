@@ -20,14 +20,14 @@
 	background-color: #feb2a8;
 }
 
-@media(min-width:1000px) {
+@media(min-width:1024px) {
 	.cell:hover{
 		background-color: #F0E68C;
 		transition: 0.5s;
    }
 }
 
-@media(max-width: 999px) {
+@media(max-width: 1023px) {
 	.container{
 		width: 250px;
 	}
