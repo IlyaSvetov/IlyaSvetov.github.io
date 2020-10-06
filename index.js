@@ -37,10 +37,10 @@ window.addEventListener('DOMContentLoaded', () => {
 	
 	function showMessage() {
 		
-		if (value === 1) {
-			alert(`Completed in ${value} click`);
+		if (count === 1) {
+			alert(`Completed in ${count} click`);
 		} else {
-			alert(`Completed in ${value} clicks`);
+			alert(`Completed in ${count} clicks`);
 		}
 	}
 	
