@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	const cells = document.querySelectorAll('.cell');
 	let count = 0;
 
-	function toogleClasses(item){
+	function toogleClasses(item) {
 
 		const cellBlockMiddle = document.getElementById(`${item}`);
 		const cellBlockRight = document.getElementById(`${+item+1}`);
@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	}
 
-	function checkWin(){
+	function checkWin() {
 
 		for (let i = 0; i < cells.length; i++) {
 
@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded', () => {
     	item.addEventListener('click', () => {
 
     		toogleClasses((item.id));
-    		checkWin(count);
+    		checkWin();
     	})
     });
 })
