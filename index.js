@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			}
 		}
 
-		alert(`Completed for ${count} clicks`);
+		alert(`Completed in ${count} clicks`);
 		refreshCount();
 	}
 	
