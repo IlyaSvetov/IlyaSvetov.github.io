@@ -31,8 +31,17 @@ window.addEventListener('DOMContentLoaded', () => {
 			}
 		}
 
-		alert(`Completed in ${count} clicks`);
+		showMessage();
 		refreshCount();
+	}
+	
+	function showMessage() {
+		
+		if (value === 1) {
+			alert(`Completed in ${value} click`);
+		} else {
+			alert(`Completed in ${value} clicks`);
+		}
 	}
 	
 	function refreshCount() {
