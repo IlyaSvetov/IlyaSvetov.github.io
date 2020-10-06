@@ -5,11 +5,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	function toogleClasses(item) {
 
-		const cellBlockMiddle = document.getElementById(`${item}`);
-		const cellBlockRight = document.getElementById(`${+item+1}`);
-		const cellBlockLeft = document.getElementById(`${item-1}`);
-		const cellBlockTop = document.getElementById(`${item-10}`);
-		const cellBlockBottom = document.getElementById(`${+item+10}`);
+		const cellBlockMiddle = document.getElementById(`${item}`),
+		      cellBlockRight = document.getElementById(`${+item+1}`),
+		      cellBlockLeft = document.getElementById(`${item-1}`),
+		      cellBlockTop = document.getElementById(`${item-10}`),
+		      cellBlockBottom = document.getElementById(`${+item+10}`);
 
 
 		if (cellBlockMiddle!=null)  cellBlockMiddle.classList.toggle('changed');
