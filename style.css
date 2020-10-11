@@ -16,6 +16,14 @@
 	display: flex;
 }
 
+.button {
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+	background-color: black;
+	color: #fff;
+}
+
 .changed {
 	background-color: #feb2a8;
 }
@@ -24,7 +32,12 @@
 	.cell:hover{
 		background-color: #F0E68C;
 		transition: 0.5s;
-   }
+          }
+	.button:hover {
+		    	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+		    	transition: 0.5s;
+	  }
+
 }
 
 @media(max-width: 1023px) {
