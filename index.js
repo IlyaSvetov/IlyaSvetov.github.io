@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-	const cells = document.querySelectorAll('.cell');
+	const   cells = document.querySelectorAll('.cell'),
+	       	button = document.querySelector('.button');
 	let count = 0;
 
 	function toogleClasses(item) {
@@ -32,7 +33,6 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 
 		showMessage();
-		refreshCount();
 	}
 	
 	function showMessage() {
@@ -42,20 +42,31 @@ window.addEventListener('DOMContentLoaded', () => {
 		} else {
 			alert(`Completed in ${count} clicks`);
 		}
+		
+		count = -1; //refresh count
 	}
 	
-	function refreshCount() {
-		
-		count = -1;
+	function refreshGame() {
+
+		for (let i = 0; i < cells.length; i++) {
+
+			cells[i].classList.remove('changed')
+		}
+
+		count=0;
 	}
 
 
-    cells.forEach(item => {
+        cells.forEach(item => {
 
     	item.addEventListener('click', () => {
 
     		toogleClasses((item.id));
     		checkWin();
-    	})
-    });
+		})
+	})
+	button.addEventListener('focus', () => {
+
+    	refreshGame();
+ 	})
 })
